@@ -1,0 +1,118 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color:#96b5e4;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.dayWeather {
+    display: flex;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.flex {
+    flex: 1 0 12%;    
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+input {
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    min-width: 300px;
+    padding: 8px;
+    margin: 20px auto;
+    outline: none;
+}
+
+.tabs__nav {
+    width: 330px;
+    margin: 20px auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;    
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: tomato;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-date {
+    align-self: center;
+}
+
+#is-authorize {
+    visibility: hidden;
+}
+
+.btns {
+   display: block;
+   margin: 0 auto;
+   width: 270px;
+}
+
+.login-btn, .logout-btn {
+    color: #232323;
+    background: transparent;
+    border: 1px solid #232323;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .3em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.login-btn:before, .logout-btn:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: seagreen;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+
+.login-btn:hover:before, .logout-btn:hover:before {
+    transform: translate(4px, 4px);
+}
